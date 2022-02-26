@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: #ffff;
+    font-family: 'Lora', serif;
+    overflow-x: hidden;
+}
+
+/** Navegation Menu **/
+
+.menu{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:9999;
+}
+.btn-menu{display: none;}
+.menu .logobox{margin-left: 30px;}
+.menu .logobox h1 > a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 30px;
+    font-weight: 400;
+}
+.menu .logobox h1 > a > i{color:#f8b30e; margin-right: 10px;}
+.menu .list-container{margin-right: 30px;}
+.menu .list-container .lists{display: flex;}
+.menu .list-container .lists li{list-style: none;}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 19px;
+    margin:0px 7px;
+    padding: 5px;
+    border-radius: 3px;
+    transition: 300ms;
+}
+.menu .list-container .lists li a:hover{color:#f8b30e;}
+.menu .list-container .lists li a.active{color:#f8b30e;}
+
+/** Img header **/
+.img-header{
+    background: url(../img/bald-eagles-raptor-bird-of-prey-white-tailed-eagle.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.6);
+    background-blend-mode: soft-light;
+
+    position: relative;
+    width: 100%;
+    height:100vh;
+}
+.img-header .welcome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h4{
+    color: #ffff;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+.img-header .welcome > h2{margin-top: 50px;}
+.img-header .welcome > h2 a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 50px;
+    font-weight: 400;
+}
+.img-header .welcome > h2 a > i{color:#f8b30e; margin-right: 10px;}
+
+
+/** About Us **/
+#quienessomos{width: 100%;}
+#quienessomos .info{
+    width: 100%;
+    margin-top: 100px;
+}
+.quienessomos .info h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+}
+.quienessomos .info p {
+   width: 80%;
+   margin:50px auto;
+   text-align: center;
+   color:#000;
+   font-size: 19px;
+   line-height: 40px;
+}
+.quienessomos .info hr{
+    width: 90%;
+    border:none;
+    height: 2px;
+    background: #4d4d4d;
+    margin:auto;
+}
+.quienessomos .content{
+    width: 100%;
+    margin-top: 100px;
+    background: #1B9CFC;
+    padding:30px;
+}
+.quienessomos .content h4{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color:#fff;
+}
+.quienessomos .content .icons{
+    width: 90%;
+    margin:30px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.quienessomos .content .icons > div{width: 100%; margin:0px 30px;}
+.quienessomos .content .icons > div > .span-icon{
+    width:100%;
+    font-size: 40px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+}
+.quienessomos .content .icons .services-row-box{
+    float: right;
+    width: 25%;
+    padding: 20px;
+    padding-right: 20px;
+}
+.quienessomos .content .icons > div h6{
+    font-size: 25px;
+    color:#fff;
+    text-align: center;
+    font-weight:normal;
+    margin:20px 0px 5px 0px;
+}
+.quienessomos .content .icons > div p{
+    font-size: 18px;
+    text-align: center;
+    color:#fff;
+}
+
+.Sucursales{
+    width: 100%;
+    text-align: center;
+
+}
+.Sucursales h2{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 40px;
+}
+.Sucursales hr{
+    width: 90%;
+    border:none;
+    height: 2px;
+    background: #4d4d4d;
+    margin:auto;
+    
+}
+.Sucursales img{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+    border-radius: 100px;
+}
+
+/** Gallery **/
+.gallery-section{width: 100%;}
+.Galeria h2{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+.gallery-content{
+    width: 90%;
+    margin:30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 230px);
+    grid-gap: 10px;
+}
+.gallery-content .img-card{
+    width: 100%;
+    width: 100%;
+}
+.gallery-content .img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.Galeria hr{
+    width: 90%;
+    border:none;
+    height: 2px;
+    background: #4d4d4d;
+    margin:auto;
+    
+}
+
+
+.contacto .form-register{
+    width: 400px;
+    background: #1B9CFC;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family:'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+.contacto h2{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 100px;
+
+}
+.contacto .form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.contacto .form-register .controls{
+    width: 100%;
+    background: #C2C4C3;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid white;
+    font-size: 18px;
+}
+.form-register .botons{
+    width: 100%;
+    background: green;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+/** Footer **/
+footer{
+    width: 100%;
+    height: 60px;
+    margin-top: 100px;
+    background: #000;
+}
+footer p{
+    text-align: center;
+    line-height: 60px;
+    color:#fff;
+}
+
